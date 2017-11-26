@@ -64,8 +64,8 @@ helo=""
 
 KAC=[cl]
 mid = cl.getProfile().mid
-admsa = "u2268e71c9e91f04a1f9ee25dbb643dda"
-admin = "u2268e71c9e91f04a1f9ee25dbb643dda"
+admsa = "udfd7bf5b9a1c9fa8168d6dd9652fb050"
+admin = "udfd7bf5b9a1c9fa8168d6dd9652fb050"
 
 wait = {
     'contact':True,
@@ -160,7 +160,7 @@ def bot(op):
             msg = op.message
             if msg.toType == 0:
                 msg.to = msg.from_
-                if msg.from_ == "u2268e71c9e91f04a1f9ee25dbb643dda":
+                if msg.from_ == "udfd7bf5b9a1c9fa8168d6dd9652fb050":
                     if "join:" in msg.text:
                         list_ = msg.text.split(":")
                         try:
