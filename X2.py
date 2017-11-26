@@ -6,7 +6,7 @@ from datetime import datetime
 import time,random,sys,json,codecs,threading,glob
 
 cl = TOBY.LINE()
-cl.login(token="Enou3HNOIX4Kg4QqJ9Oa.iMJNhj6r8eOFNUjDU2q92G.LW/I1eF/wdgIDG7ljUDjpQp3rsypTCcvyMKgxrverw8=")
+cl.login(qr=True)
 cl.loginResult()
 
 print u"##-------login success-------##"
