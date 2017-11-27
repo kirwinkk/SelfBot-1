@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
-import TOBY
-from TOBY.lib.curve.ttypes import *
+import Toby
+from Toby.lib.curve.ttypes import *
 from datetime import datetime
 import time,random,sys,json,codecs,threading,glob
 from gtts import gTTS
@@ -10,7 +10,7 @@ import goslate
 import time
 import os
 
-cl = LINETCR.LINE()
+cl = Toby.LINE()
 cl.login(token="Emea2zZWDTaiWK8V6ST9.MZrkjd9u6Oz3cBqGai+WIq.v68AtOIgGt2DvIsYrdZMmzka9CKX0xmSH0jRWX0WWL8=")
 cl.loginResult()
 
