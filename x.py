@@ -3,7 +3,7 @@
 import Toby
 from Toby.lib.curve.ttypes import *
 from datetime import datetime
-import time,random,sys,json,codecs,threading,glob
+import time,random,sys,json,codecs,threading,glob,re,requests,urllib
 from gtts import gTTS
 from bs4 import BeautifulSoup
 import goslate
