@@ -3,7 +3,7 @@
 import Toby
 from Toby.lib.curve.ttypes import *
 from datetime import datetime
-import time,random,sys,json,codecs,threading,glob
+import time,random,sys,json,codecs,threading,glob,re,requests,urllib
 from gtts import gTTS
 from bs4 import BeautifulSoup
 import goslate
@@ -464,7 +464,7 @@ def bot(op):
 #--------------------------------------------------------
             elif '/instagram:' in msg.text.lower():
                 try:
-                    instagram = msg.text.lower().replace(".instagram:","")
+                    instagram = msg.text.lower().replace("/instagram:","")
                     html = requests.get('https://www.instagram.com/' + instagram + '/?')
                     soup = BeautifulSoup(html.text, 'html5lib')
                     data = soup.find_all('meta', attrs={'property':'og:description'})
